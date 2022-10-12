@@ -17,7 +17,7 @@
         </div>
         
         <div class="factors">
-            <p id = "facs"></p>
+            <p id = "facs">Factors:</p>
         </div>
 
         <script>
@@ -44,8 +44,8 @@
         function printFactors(){
             var factors1 = [];
             var factors2 = [];
-            var val1 = document.getElementById("userInput1").value;
-            var val2 = document.getElementById("userInput2").value;
+            var val1 = document.getElementById("userInput1");
+            var val2 = document.getElementById("userInput2");
             factors1 = pushFactor(val1);
             factors2 = pushFactor(val2);
             for (let i = 0; i < factors1.length; i++){
