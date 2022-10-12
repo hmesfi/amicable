@@ -5,17 +5,22 @@
     </head>
 
     <body>
+        <input type ="button" onclick ="getValues()" value="Value One">
+        <input type ="button" onclick ="getValues()" value="Value Two">
         <div class= "result">
-
         </div>
-        <div class=""factors>
-
+        <div class="factors">
+        <p id = "facs"></p>
         </div>
 
         <script>
-        var val_one = prompt("Enter first value:");
-        var val_two = prompt("Enter second value:");
+
         var factors = [];
+
+        function getValues(){
+            var val_one = prompt("Enter first value:");
+            var val_two = prompt("Enter second value:");
+        }
 
         function isAFactor(x, y) {
             var factor;
@@ -28,10 +33,10 @@
             for (let i = 1; i <= n; i++){
                 if (isAFactor(i, n) != 0){
                     factors.push(n);
+                    document.getElementById("facs").innerHTML =
+                    "Factors: " + n;
                 }
             }
-            document.getElementById("result").innerHTML =
-            "Factors of " + n;
         }
 
         // function isAmicable(val1, val2){
