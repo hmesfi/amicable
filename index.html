@@ -5,8 +5,14 @@
     </head>
 
     <body>
-        <input type ="button" onclick ="getValues()" value="Value One">
-        <input type ="button" onclick ="getValues()" value="Value Two">
+        <div class ="values">
+            <form id="v1" onsubmit="return false;">
+                Value 1: <input type="number" name="userInput1"><br>
+                Value 2: <input type="number" name="userInput2"><br><br>
+                <input type ="button" value="Submit">
+            </form>
+
+        </div>
         <div class= "result">
         </div>
         <div class="factors">
